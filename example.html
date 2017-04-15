@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jquery rating example</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="rating.js"></script>
+    <link rel="stylesheet" type="text/css" href="rating.css" />
+    <script type="text/javascript">
+        $(function ()
+        {
+            $('.rating').rating();
+
+            $('.ratingEvent').rating({ rateEnd: function (v) { $('#result').text(v); } });
+        });
+    </script>
+</head>
+
+<body>
+   
+    Base example!!!!!!!!!!!<br />
+    <form method="post" action="insRating.php">
+    <input type="text" class="rating rating10" name="textval"/>
+    </form>
+    <br />
+    Base example<br />
+    <form method="post" action="insRating.php">
+    <input type="text" class="rating rating10" />
+    </form>
+    <br />
+    Base example<br />
+    <form method="_POST" action="insRating.php">
+    <input type="text" class="rating rating10" />
+    </form>
+    <br />
+    Base example<br />
+    <form method="_POST" action="insRating.php">
+    <input type="text" class="rating rating10" />
+    </form>
+    <br />
+    Base example<br />
+    <form method="_POST" action="insRating.php">
+    <input type="text" class="rating rating10" />
+    </form>
+    <br />
+    Base example<br />
+    <form method="_POST" action="insRating.php">
+    <input type="text" class="rating rating10" />
+    </form>
+    <br />
+
+   
+</body>
+</html>
